@@ -283,14 +283,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1135,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -332,6 +324,7 @@
 	],
 	"file_history":
 	[
+		"/Users/sarnoul1/Documents/CODE/GitHub/AdaptiveTable/index.html",
 		"/Users/sarnoul1/Documents/DynamicUnits/HTML_Units/GWD/fullDynamic_300x600/feeds/studio_dynamic_remarketing.json",
 		"/Users/sarnoul1/Documents/DynamicUnits/HTML_Units/GWD/BB_DynamicRemarketingCarousel/BB_DynamicRemarketingCarousel/feeds/studio_dynamic_remarketing.json",
 		"/Users/sarnoul1/Desktop/test/test/feeds/five_product_feed.json",
@@ -458,8 +451,7 @@
 		"/Users/sarnoul1/Box Sync/YPscanTool/DCS_ready/YP_728x90_FR/assets/typed.js",
 		"/Users/sarnoul1/Box Sync/YPscanTool/FinalExport/YP_728x90_FR/typed.js",
 		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/chatr_main_code_EN.html",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/CSS/style_fr.css",
-		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/Caroussel_EN.html"
+		"/Users/sarnoul1/Box Sync/Creative Services/Shopper Marketing/Vendor Coop/Creative/Rogers Communications/13675 - Chatr Brand Store/Production/03_Integration/code/CSS/style_fr.css"
 	],
 	"find":
 	{
@@ -494,38 +486,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
