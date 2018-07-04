@@ -1,0 +1,60 @@
+<style type="text/css">
+
+.md_container{
+	width: 100%;
+  position: relative;
+}
+
+
+
+.md_sectionTitle{
+  padding-top: 10px;
+  padding-bottom: 0px !important;
+  overflow: hidden;
+  color: #333333;
+  font-size: 2.3rem !important;
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.md_sectionTitle:after{
+  content:"";
+  display: inline-block;
+  height: 0.3em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid black;
+}
+
+.md_contentTitle{
+  color: #1267a4;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 8px !important;
+  margin-bottom: 3px !important;
+  /*padding: 15px 30px 10px 30px;*/
+}
+
+.md_contentSubTitle{
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 5px !important;
+  margin-bottom: 7px !important;
+  /*padding: 15px 30px 10px 30px;*/
+}
+
+
+
+/* MEDIA QUERIES------------------------------------------*/
+
+@media screen and (max-width : 1000px){
+
+
+</style>
+
+
+
