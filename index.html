@@ -1,4 +1,22 @@
-<span class="mdBtnReset">Reset</span>
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="https://www.mediative.co/creativeservices/WM_CodeLibrary/common-files/css/WMglobal.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="https://www.mediative.co/creativeservices/WM_CodeLibrary/common-files/css/globalStyle-min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500" media="screen" />
+  <link rel="stylesheet" type="text/css" href="CSS/simplegrid.css" />
+  <link rel="stylesheet" type="text/css" href="CSS/style_en.css"/>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
+</head>
+
+<div class="grid grid-pad">
+  <div class="col-10-12">
+
+    <span class="mdBtnReset">Reset</span>
 <span class="mdBtnFilter">Filter</span>
 <main class="mdDynamicTableContainer">
   <table id="mdDynamicTable">
@@ -146,34 +164,4 @@
 <script type="text/javascript">
   "use strict";for(var columnLeft,columnsLength,tableLeft,winWidth,thIndex,mdDynamicTable=document.getElementById("mdDynamicTable"),tabsHeader=mdDynamicTable.querySelector("thead").getElementsByTagName("th"),inputsHeader=mdDynamicTable.querySelectorAll("input"),mdthTd=mdDynamicTable.querySelectorAll("th, td"),mdTableNext=document.getElementById("mdTableNext"),mdTablePrevious=document.getElementById("mdTablePrevious"),rows=mdDynamicTable.getElementsByTagName("tr"),mdFilterBtns=document.getElementById("mdFilterBtns"),mdBtnReset=document.getElementsByClassName("mdBtnReset")[0],mdBtnFilter=document.getElementsByClassName("mdBtnFilter")[0],additionNumber=100/(tabsHeader.length-noDisplayed),mobileElements=[],firstColumn=[],noDisplayed=0,i=0;i<rows.length;i++)firstColumn.push(rows[i].firstElementChild);mdTablePrevious.style.display="none";for(i=0;i<firstColumn.length;i++)firstColumn[i].classList.add("firstColumn"),mobileElements.push(firstColumn[i].cloneNode(!0)),mobileElements[i].setAttribute("class","mobileElement"),mobileElements[i].setAttribute("colspan","2");for(i=1;i<mobileElements.length;i++)mdDynamicTable.lastElementChild.insertBefore(mobileElements[i],rows[i]);function dynamicTable(e){additionNumber=100/(tabsHeader.length-e);for(var t=0;t<mdthTd.length;t++)mdthTd[t].style.width=additionNumber+"%";winWidth=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,columnLeft=winWidth>1279?5:winWidth<1280&&winWidth>720?4:2;for(t=0;t<firstColumn.length;t++)firstColumn[t].style.left="0%",mobileElements[t].style.left="0%",mobileElements[t].style.display=2==columnLeft?"table-cell":"none",firstColumn[t].style.display=2==columnLeft?"none":"table-cell",firstColumn[t].style.background=t%2!=0&&columnLeft>2?"#f3f7fa":"#fff",firstColumn[t].parentNode.style.background=t%2!=0&&columnLeft>2?"#f3f7fa":"#fff";mdDynamicTable.style.left="0%",mdTablePrevious.style.display="none",mdTableNext.style.display="flex",tableLeft=0,columnsLength=2==columnLeft?tabsHeader.length-1-e:tabsHeader.length-e,mdDynamicTable.style.width=columnsLength<=columnLeft?"100%":100*columnsLength/columnLeft+"%",columnsLength<=columnLeft?mdTablePrevious.style.display="none":mdTablePrevious.onclick=function(){showBeforeColumn()},columnsLength<=columnLeft?mdTableNext.style.display="none":mdTableNext.onclick=function(){showNextColumn()}}function showNextColumn(){mdTablePrevious.style.display="flex",tableLeft--,mdDynamicTable.style.left=100*tableLeft/columnLeft+"%",tableLeft<"-"+(columnsLength-1-columnLeft)&&(mdTableNext.style.display="none"),2==columnLeft?twoColumn():plusColumn()}function showBeforeColumn(){mdTableNext.style.display="flex",tableLeft++,mdDynamicTable.style.left=100*tableLeft/columnLeft+"%",tableLeft>=0&&(mdTablePrevious.style.display="none"),2==columnLeft?twoColumn():plusColumn()}function plusColumn(){for(var e=0;e<firstColumn.length;e++)firstColumn[e].style.left=tableLeft*("-"+additionNumber)+"%"}function twoColumn(){for(var e=0;e<mobileElements.length;e++)mobileElements[e].style.left=Math.ceil(tableLeft*("-"+100/columnsLength)*10)/10+"%"}dynamicTable(noDisplayed),window.onresize=function(){dynamicTable(noDisplayed)};var temporary,temporaryClass,xDown=null;function handleTouchStart(e){xDown=e.touches[0].clientX}function handleTouchMove(e){if(xDown){var t=e.touches[0].clientX,l=xDown-t;l>15&&tableLeft>"-"+(columnsLength-columnLeft)?showNextColumn():l<-15&&tableLeft<0&&showBeforeColumn(),xDown=null}}mdDynamicTable.addEventListener("touchstart",handleTouchStart,!1),mdDynamicTable.addEventListener("touchmove",handleTouchMove,!1);for(i=0;i<rows.length;i++){temporary=rows[i].querySelectorAll("th, td");for(var j=1;j<temporary.length;j++)temporary[j].className="col"+j}var counter=0;mdBtnFilter.onclick=function(){counter=0,noDisplayed=0;for(var e=0;e<inputsHeader.length;e++)inputsHeader[e].checked&&counter++;if(counter>1){for(e=0;e<inputsHeader.length;e++)if(!inputsHeader[e].checked){noDisplayed++,temporaryClass=document.getElementsByClassName(inputsHeader[e].parentNode.parentNode.className);for(var t=0;t<temporaryClass.length;t++)temporaryClass[t].style.display="none"}dynamicTable(noDisplayed)}else alert("You have to choose at least 2 products")},mdBtnReset.onclick=function(){noDisplayed=0;for(var e=0;e<mdthTd.length;mdthTd[e].style.display="table-cell",e++);for(e=0;e<inputsHeader.length;inputsHeader[e].checked=!1,e++);dynamicTable(noDisplayed)};
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
